@@ -3,7 +3,7 @@
 // Branchements
 const int pinCapteurMouvement = 3;
 const int pinBandeauLED = 6;
-const int nombreLEDs = 4;
+const int nombreLEDs = 4; // A modifier en fonction des leds du prof
 
 // Paramètres du jeu (en ms)
 const unsigned long dureeOrange = 4000; // Durée de la phase orange
