@@ -4,6 +4,7 @@ void allumerLeds(CRGB couleur, int delai) {
     leds[i] = couleur;
     if ((i - 1) % 5 == 4 || i == NUM_LEDS - 1) {
       FastLED.show();
+      sonAllumageLED();
       delay(delai);
     }
   }

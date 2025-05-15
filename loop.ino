@@ -1,7 +1,4 @@
 #include <FastLED.h>
-#include "Leds.ino"
-#include "Ultrason.ino"
-#include "Buzzer.ino"
 
 // Bandeau LED
 #define NUM_LEDS 21
@@ -18,6 +15,9 @@
 // Capteur de mouvement PIR
 #define PIR_PIN 6
 
+// Capteur buzzer
+#define BUZZER_PIN A4
+
 // Tableau LED
 CRGB leds[NUM_LEDS];
 
@@ -30,32 +30,34 @@ void setup() {
   // Initialisation des entrées/sorties
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_BUILTIN, OUTPUT);
-
   pinMode(TRIG_PIN, OUTPUT);
   pinMode(ECHO_PIN, INPUT);
-
   pinMode(PIR_PIN, INPUT);
 
   Serial.begin(9600);
 }
 
 void loop() {
-  // Lecture état bouton
-  int bouton = digitalRead(BUTTON_PIN);
-  digitalWrite(LED_BUILTIN, bouton == LOW ? HIGH : LOW);
-
+  // Bouton :
+  if (gererBouton()) {
+    Serial.println("Bouton appuyé");
+    digitalWrite(LED_BUILTIN, HIGH);
+  } else {
+    Serial.println("Bouton relâché");
+    digitalWrite(LED_BUILTIN, LOW);
+  }
+    
   // Mesure distance
   float distance = lireDistanceUltrason();
   Serial.print("Distance (cm) : ");
   Serial.println(distance);
 
-  // Lecture capteur de mouvement PIR
-  int mouvement = digitalRead(PIR_PIN);
-
   // Allumage progressif des LEDs
   allumerLeds(CRGB::Green, 1000);
 
-  if (mouvement == HIGH) {
+  // Detecteur de mouvement
+  if (detecterMouvement()) {
+    sonPerdu(); // commenter ça pour les tests sinon insuportable
     Serial.println("Mouvement détecté !");
   } else {
     Serial.println("Pas de mouvement.");
