@@ -35,18 +35,18 @@ void setup() {
   pinMode(PIR_PIN, INPUT);
 
   Serial.begin(9600);
-  Serial.print("État bouton au démarrage : ");
-  Serial.println(digitalRead(BUTTON_PIN));
 
   unsigned long t0 = millis();
   while (millis() - t0 < 1000) {
     // Attente active pendant 1 seconde pour ignorer les glitchs initiaux
     delay(10);
   }
+  Serial.println("Cliquez sur le bouton pour démarrer le jeu");
 }
 
 bool jeuEnCours = false;
 bool pretAPartir = false;  // devient true après avoir détecté distance > 1.5m
+int dureeSoleil = 1000; // 1 seconde de capteur de mouvement
 
 void loop() {
   // Appui bouton : démarrage ou arrêt
@@ -87,9 +87,10 @@ void loop() {
   // 🔹 Étape 3 : observation (ne pas bouger)
   Serial.println("🟡 Observation : ne bougez plus !");
   bool mouvementDetecte = false;
+  allumerTout(CRGB(255, 80, 0));
   unsigned long t0 = millis();
 
-  while (millis() - t0 < 3000) {
+  while (millis() - t0 < dureeSoleil) {
     if (detecterMouvement()) {
       mouvementDetecte = true;
       break;
@@ -100,8 +101,8 @@ void loop() {
   // 🔹 Étape 4 : résultat
   if (mouvementDetecte) {
     Serial.println("🔴 MOUVEMENT DÉTECTÉ : PERDU !");
-    allumerTout(CRGB::Red);
     sonPerdu();
+    allumerTout(CRGB::Red);
     eteindreLeds();
 
     // Attente que le joueur recule à nouveau
@@ -112,3 +113,4 @@ void loop() {
     delay(500);
   }
 }
+
