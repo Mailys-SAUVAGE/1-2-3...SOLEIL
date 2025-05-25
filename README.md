@@ -1,6 +1,8 @@
 # 1-2-3...SOLEIL
 Projet de CSF sur Arduino
 
+Si à l'ouverture de loop.ino, Arduino IDE demande à déplacer loop.ino dans un dossier loop, il faut impérativement déplacer tous les autres fichiers dans ce dossier aussi.
+
 Il faut bien penser à installer la librairie **FastLED** par Daniel Garcia avant de tester le code.
 Pour cela, ouvrir le gestionnaire de bibliotheque (3ème à gauche sur Arduino IDE), rechercher le nom et "INSTALLER".
 
