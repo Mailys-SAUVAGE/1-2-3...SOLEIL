@@ -9,3 +9,13 @@ Avant de téléverser le code, assurez-vous d'avoir correctement sélectionné v
 1. Ouvrez Arduino IDE
 2. Allez dans **Outils > Carte > RFThings AVR Boards**
 3. Selectionnez : RFThings UCA
+
+
+Couleurs :
+- Vert : 1,2,3... (mouvement autorisé)
+- Orqnge : ...SOLEIL (détection)
+- Rouge : (mouvement détecté)
+- Or : Victoire
+
+Amélioration possible : 
+- Avec un capteur plus précis, afficher, via les leds, où se trouve le joueur par rapport à la distance requise pour start le jeu.
