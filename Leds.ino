@@ -21,6 +21,7 @@ void allumerLeds(CRGB couleur, int delai) {
         delay(pas);
         attente += pas;
       }
+      delay(250);
     }
   }
 }
@@ -31,7 +32,6 @@ void allumerTout(CRGB couleur) {
     leds[i] = couleur;
   }
   FastLED.show();
-  sonPerdu();
   delay(1000);
 }
 
