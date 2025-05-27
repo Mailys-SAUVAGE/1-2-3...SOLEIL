@@ -48,7 +48,7 @@ Le capteur PIR permet de détecter un mouvement. Il est essentiellement constitu
 
 - **Un capteur à ultrasons HC-SR04**
 Ce type de capteur utilise le sonar pour déterminer la distance à un objet : l’émetteur (broche trig) envoie un signal, un son à haute fréquence. Lorsque le signal rencontre un objet, il est réfléchi et l’émetteur (broche echo) le reçoit. Ici, il nous sert lors de la première étape essentielle du programme pour permettre au dispositif de détecter la position de départ de l’enfant dans le jeu. Cette mesure est indispensable pour valider que l’enfant se trouve à la bonne distance soit à au moins 2 mètres et commencer la partie. En théorie, le capteur à ultrasons HC-SR04 a une distance de mesure allant de 2 cm à 400 cm. 
-<img src="" alt="Description" width="200">
+<img src="CapteurUltrasons.jpg" alt="Description" width="200">
 
 <br>
 
