@@ -25,7 +25,9 @@ L’idée de départ : moderniser un jeu traditionnel connu de tous (**1,2,3... 
 <br>
 
 ### Fonctionnement global du dispositif 
-![Algorigramme « 1,2,3 Soleil ! »](./3dcf0fe8-98cd-4ee4-a381-ebf9cd86ef78.png)
+![Description](algorigramme.jpg)
+
+
 
 <br>
 
