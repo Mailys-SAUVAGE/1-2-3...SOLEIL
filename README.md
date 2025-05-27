@@ -68,7 +68,7 @@ Pour mener au mieux ce projet et que le jeu soit le plus adapté possible à ses
    - RFThings UCA  
    - Version : 3.9 and newer : AT328PB  
 5. Sélectionner le bon Port COM  
-6. Installer la bibliothèque **FastLED** de Daniel Garcia  
+6. Installer la librairie **FastLED** de Daniel Garcia  
 
 <br>
 
@@ -92,7 +92,6 @@ GND        <----> GND  (masse)
 
 #### Conseils de câblage :
 - Le capteur PIR nécessite du 5V et GND pour fonctionner.
-- La bande WS2812 consomme beaucoup : attention à bien alimenter le 5V si vous utilisez plusieurs LED.
 - Le buzzer n’a que 2 pattes : la patte marquée + doit aller vers A4, et l’autre vers GND.
 
 <br>
