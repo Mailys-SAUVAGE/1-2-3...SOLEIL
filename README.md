@@ -52,6 +52,7 @@ Ce type de capteur utilise le sonar pour déterminer la distance à un objet : l
 
 <br>
 
+![Algorigramme](algorigramme.jpg)
 
 <br>
 
