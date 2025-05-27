@@ -41,7 +41,7 @@ Pour mener au mieux ce projet et que le jeu soit le plus adapté possible à ses
 
 - **Un buzzer**
 Il s’agit d’un petit dispositif sonore, similaire à un haut-parleur de faible puissance, qui produit un son en fonction de la fréquence et de l’amplitude des vibrations. Il permet de générer des notes et de simples mélodies.
-<img src="" alt="Description" width="200">
+<img src="Buzzer.jpg" alt="Description" width="200">
 
 - **Un détecteur de mouvement PIR**
 Le capteur PIR permet de détecter un mouvement. Il est essentiellement constitué d’un capteur pyroélectrique capable de détecter les niveaux de rayonnement infrarouge.  Pour notre dispositif, il est utile lors des phases de détection, juste après le décompte du « 1, 2, 3 Soleil ! » quand l’enfant est censé être immobile. Le capteur nous permet identifier s’il y a eu un mouvement ou non et donc de contrôler le respect de la règle centrale du jeu.
