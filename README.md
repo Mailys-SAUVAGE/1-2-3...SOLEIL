@@ -25,8 +25,8 @@ L’idée de départ : moderniser un jeu traditionnel connu de tous (**1,2,3... 
 <br>
 
 ### Fonctionnement global du dispositif 
-![Description](algorigramme.jpg)
 
+<img src="algorigramme.jpg" alt="Description" width="700">
 
 
 
