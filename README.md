@@ -42,14 +42,16 @@ Pour mener au mieux ce projet et que le jeu soit le plus adapté possible à ses
 Il s’agit d’un petit dispositif sonore, similaire à un haut-parleur de faible puissance, qui produit un son en fonction de la fréquence et de l’amplitude des vibrations. Il permet de générer des notes et de simples mélodies.
 
 - **Un détecteur de mouvement PIR**
-Le capteur PIR permet de détecter un mouvement. Il est essentiellement constitué d’un capteur pyroélectrique capable de détecter les niveaux de rayonnement infrarouge.  Pour notre dispositif, il est utile lors des phases de détection, juste après le décompte du « 1, 2, 3 Soleil ! » quand l’enfant est censé être immobile. Le capteur nous permet identifier s’il y a eu un mouvement ou non et donc de contrôler le respect de la règle centrale du jeu. 
+Le capteur PIR permet de détecter un mouvement. Il est essentiellement constitué d’un capteur pyroélectrique capable de détecter les niveaux de rayonnement infrarouge.  Pour notre dispositif, il est utile lors des phases de détection, juste après le décompte du « 1, 2, 3 Soleil ! » quand l’enfant est censé être immobile. Le capteur nous permet identifier s’il y a eu un mouvement ou non et donc de contrôler le respect de la règle centrale du jeu.
+
+<img src="PIR.jpg" alt="Description" width="200">
 
 - **Un capteur à ultrasons HC-SR04**
 Ce type de capteur utilise le sonar pour déterminer la distance à un objet : l’émetteur (broche trig) envoie un signal, un son à haute fréquence. Lorsque le signal rencontre un objet, il est réfléchi et l’émetteur (broche echo) le reçoit. Ici, il nous sert lors de la première étape essentielle du programme pour permettre au dispositif de détecter la position de départ de l’enfant dans le jeu. Cette mesure est indispensable pour valider que l’enfant se trouve à la bonne distance soit à au moins 2 mètres et commencer la partie. En théorie, le capteur à ultrasons HC-SR04 a une distance de mesure allant de 2 cm à 400 cm. 
+<img src="" alt="Description" width="200">
 
 <br>
 
-![Description](IMG_5804.jpeg) 
 
 <br>
 
