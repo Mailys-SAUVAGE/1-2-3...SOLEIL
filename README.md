@@ -49,7 +49,6 @@ Pour mener au mieux ce projet et que le jeu soit le plus adapté possible à ses
 
 <br>
 
-![Algorigramme](schéma.montage) 
 
 <br>
 
