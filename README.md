@@ -49,6 +49,7 @@ Pour mener au mieux ce projet et que le jeu soit le plus adapté possible à ses
 
 <br>
 
+<img src="ressources/schéma.montage" alt="Description" width="700">
 
 <br>
 
